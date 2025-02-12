@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="daily.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-page" id="login-page">
+        <h2>Login to your account</h2>
+
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Enter your username" />
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+
+          <button id="login-btn">Login</button>
+        </form>
+        <p id="error-message"></p>
+      </div>
+      <div class="todo-page" id="todo-page" style="display: none">
+        <h2>Your To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a new task" />
+        <button id="add-todo-btn">Add Task</button>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="daily.js"></script>
+  </body>
+</html>
